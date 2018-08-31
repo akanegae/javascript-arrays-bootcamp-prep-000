@@ -41,10 +41,17 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 
 //8
 function removeElementFromBeginningOfArray(array) {
-  return (0, array.length - 1);
+  array.slice(0);
+  return array;
 }
 
 //9
 function destructivelyRemoveElementFromEndOfArray(array) {
   array.pop();
+}
+
+//10
+function removeElementFromEndOfArray(array) {
+  array.slice(0, array.length - 1);
+  return array;
 }
